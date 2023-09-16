@@ -25,4 +25,5 @@ Referring to the figure below. I have written the RTL Verilog files for all subm
   • Index: 5 bits.  
   • Tag: 3 bits.  
   • Valid: 1 bit.  
-  
+  ![WhatsApp Image 2023-09-04 at 22 35 23](https://github.com/mo2men3la2/RISC-V-Processor-with-Data-Cache-Memory-System/assets/54054905/16c9d938-41bb-435a-a854-381842b36d1b)
+
