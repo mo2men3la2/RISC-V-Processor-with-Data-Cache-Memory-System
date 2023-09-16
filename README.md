@@ -28,29 +28,29 @@ Referring to the figure below. I have written the RTL Verilog files for all subm
   ![WhatsApp Image 2023-09-04 at 22 35 23](https://github.com/mo2men3la2/RISC-V-Processor-with-Data-Cache-Memory-System/assets/54054905/16c9d938-41bb-435a-a854-381842b36d1b)
 ## Simulation & Results
 ● To test the functionality of the whole processor I worte an assembly program that covers all scenarios of storing and loading from the Data Memory:  
-*/ addi x0, x0, 0 		# x0 = 0 /*
-*/ addi x1, x0, 1 	 	# x1 = 1 /*
-*/ addi x2, x0, 2 		# x2 = 2 /*
-*/ addi x3, x0, 3 		# x3 = 3 /*
+*/ addi x0, x0, 0 		# x0 = 0 /*  
+*/ addi x1, x0, 1 	 	# x1 = 1 /*  
+*/ addi x2, x0, 2 		# x2 = 2 /*  
+*/ addi x3, x0, 3 		# x3 = 3 /*  
 
-*/ addi x4, x0, 1111 	  # x4 = 32’h00000457 /*
-*/ addi x5, x0, 2222	  # x5 = 32’hfffff8ae /*
-*/ addi x6, x0, 3333 	  # x6 = 32’hfffffd05 /*
-*/ addi x7, x0, 4444 	  # x7 = 32’h0000015c /*
+*/ addi x4, x0, 1111 	  # x4 = 32’h00000457 /*  
+*/ addi x5, x0, 2222	  # x5 = 32’hfffff8ae /*  
+*/ addi x6, x0, 3333 	  # x6 = 32’hfffffd05 /*  
+*/ addi x7, x0, 4444 	  # x7 = 32’h0000015c /*  
+  
+*/ sw x4, 0(x0) 		      # [0] = 00000457 /*  
+*/ sw x5, 0(x1) 		      # [1] = fffff8ae /*  
+*/ sw x6, 0(x2) 		      # [2] = fffffd05 /*  
+*/ sw x7, 0(x3) 		      # [3] = 0000015c /*  
 
-*/ sw x4, 0(x0) 		      # [0] = 00000457 /*
-*/ sw x5, 0(x1) 		      # [1] = fffff8ae /*
-*/ sw x6, 0(x2) 		      # [2] = fffffd05 /*
-*/ sw x7, 0(x3) 		      # [3] = 0000015c /*
+*/ lw x8, 0(x0) 	        # x8 = [0] = 00000457 /*  
+*/ lw x9, 0(x1) 	        # x9 = [1] = fffff8ae /*  
+*/ lw x10, 0(x2) 	        # x10 = [2] = fffffd05 /*  
+*/ lw x11, 0(x3) 	        # x11 = [3] = 0000015c /*  
 
-*/ lw x8, 0(x0) 	        # x8 = [0] = 00000457 /*
-*/ lw x9, 0(x1) 	        # x9 = [1] = fffff8ae /*
-*/ lw x10, 0(x2) 	        # x10 = [2] = fffffd05 /*
-*/ lw x11, 0(x3) 	        # x11 = [3] = 0000015c /*
-
-*/ sw x9, 0(x0) 		      # [0] = fffff8ae /*
-*/ lw x12, 0(x0) 	        # x11 = [0] = fffff8ae /*
-*/ sw x12, 50(x0) 		    # [50] = fffff8ae /*
+*/ sw x9, 0(x0) 		      # [0] = fffff8ae /*  
+*/ lw x12, 0(x0) 	        # x11 = [0] = fffff8ae /*  
+*/ sw x12, 50(x0) 		    # [50] = fffff8ae /*  
 ![image](https://github.com/mo2men3la2/RISC-V-Processor-with-Data-Cache-Memory-System/assets/54054905/2f390097-7e6a-4a72-b807-30e76f7c7e34)
 
 
