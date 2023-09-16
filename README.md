@@ -50,6 +50,12 @@ __________________________________&nbsp;| &nbsp; _______________________________
 */ lw x12, 0(x0) /*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|       # x11 = [0] = fffff8ae    |         0x00002603  
 */ sw x12, 50(x0) /*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|       # [50] = fffff8ae         |         0x02c02923  
 
+| Left-aligned | Center-aligned | Right-aligned |
+| :---         |     :---:      |          ---: |
+| This         |   is centered  |        Right  |
+| Left         |   Center       |          Aligned |
+
+
 ![image](https://github.com/mo2men3la2/RISC-V-Processor-with-Data-Cache-Memory-System/assets/54054905/2f390097-7e6a-4a72-b807-30e76f7c7e34)
 
 
