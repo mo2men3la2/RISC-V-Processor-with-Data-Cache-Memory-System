@@ -33,10 +33,10 @@ Referring to the figure below. I have written the RTL Verilog files for all subm
 */ addi x2, x0, 2 		# x2 = 2 /*  
 */ addi x3, x0, 3 		# x3 = 3 /*  
 
-*/ addi x4, x0, 1111 	  # x4 = 32’h00000457 /*  
-*/ addi x5, x0, 2222	  # x5 = 32’hfffff8ae /*  
-*/ addi x6, x0, 3333 	  # x6 = 32’hfffffd05 /*  
-*/ addi x7, x0, 4444 	  # x7 = 32’h0000015c /*  
+*/ addi x4, x0, 0x457 	      # x4 = 32’h00000457 /*  
+*/ addi x5, x0, 0xfffff8ae	  # x5 = 32’hfffff8ae /*  
+*/ addi x6, x0, 0xfffffd05 	  # x6 = 32’hfffffd05 /*  
+*/ addi x7, x0, 0x15c 	      # x7 = 32’h0000015c /*  
   
 */ sw x4, 0(x0) 		      # [0] = 00000457 /*  
 */ sw x5, 0(x1) 		      # [1] = fffff8ae /*  
