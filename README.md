@@ -47,7 +47,7 @@ Referring to the figure below. I have written the RTL Verilog files for all subm
 | / lw x10, 0(x2) /        | # x10 = [2] = fffffd05 | 0x00012503      |
 | / lw x11, 0(x3) /        | # x11 = [3] = 0000015c | 0x0001a583      |
 | / sw x9, 0(x0) /         | # [0] = fffff8ae     | 0x00902023       |
-| / lw x12, 0(x0) /        | # x11 = [0] = fffff8ae | 0x00002603      |
+| / lw x12, 0(x0) /        | # x12 = [0] = fffff8ae | 0x00002603      |
 | / sw x12, 50(x0) /       | # [50] = fffff8ae    | 0x02c02923       |
   
 
