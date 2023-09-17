@@ -27,7 +27,7 @@ Referring to the figure below. I have written the RTL Verilog files for all subm
   • Valid: 1 bit.  
   ![WhatsApp Image 2023-09-04 at 22 35 23](https://github.com/mo2men3la2/RISC-V-Processor-with-Data-Cache-Memory-System/assets/54054905/16c9d938-41bb-435a-a854-381842b36d1b)
 ## Simulation & Results
-● To test the functionality of the whole processor I worte an assembly program that covers all scenarios of storing and loading from the Data Memory:  
+● To test the functionality of the whole processor I worte an assembly program that covers all scenarios of storing and loading from the Data Memory. After that, I preloaded the Instruction Memory with the machine code of my assembly program. Using my designed testbench, I have verified the functionality of my design:  
 | Assembly Instruction   | Function             | Machine Code |
 | ---------------------- | -------------------- | ------------ |
 | / addi x0, x0, 0 /     | # x0 = 0             | 0x00000013   |
